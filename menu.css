@@ -44,7 +44,7 @@ header label {
 #menu-bar:checked ~ .menu {
   left: 0px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .contenedor img {
     float: left;
     width: 130px;
@@ -67,21 +67,21 @@ header label {
     margin: 20px;
   }
   .menu {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  background-color: rgb(235, 235, 235);
-  top: 0;
-  text-align: center;
-  left: -100%;
-  transition: all 1s;
-  margin-top: 70px;
-  font-family: "Lato";
-  z-index: -1;
-}
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: rgb(235, 235, 235);
+    top: 0;
+    text-align: center;
+    left: -100%;
+    transition: all 1s;
+    margin-top: 70px;
+    font-family: "Lato";
+    z-index: -1;
+  }
 }
 
-@media screen and (min-width: 1780px) {
+@media screen and (min-width: 1600px) {
   header label {
     display: none;
   }
@@ -96,7 +96,7 @@ header label {
     display: flex;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    padding: 0 100px 0 200px;
+    padding: 0 80px 0 150px;
     float: right;
     font-size: 30px;
   }

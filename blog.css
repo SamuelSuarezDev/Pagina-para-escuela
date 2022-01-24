@@ -5,6 +5,7 @@
   margin: 0;
   overflow-x: hidden;
   font-family: "Outfit", sans-serif;
+  margin-bottom: 20px;
 }
 #blog img {
   width: 100%;
@@ -49,7 +50,7 @@
     padding: 30px;
   }
 }
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 2050px) {
   #blog .container {
     display: flex;
     flex-direction: column;
