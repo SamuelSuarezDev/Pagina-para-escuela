@@ -8,6 +8,12 @@ button {
   align-items: center;
   margin: 0 0 0 0;
 }
+.form,
+.contacto {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(243, 243, 243);
+}
 .form h3 {
   margin: 50px 0 0 0;
 }
@@ -18,6 +24,7 @@ select,
 textarea,
 button {
   padding: 20px;
+  background: none;
 }
 input,
 select {
@@ -31,8 +38,10 @@ textarea {
   width: 100%;
 }
 button {
-  padding: 10px;
+  padding: 18px;
   margin-top: 20px;
+  border-radius: 6px;
+  background-color: rgb(230, 230, 250);
 }
 .contacto .no-resp {
   display: flex;
@@ -42,12 +51,23 @@ button {
 }
 .resp {
   display: none;
+  color: black;
+opacity: 0.6;
 }
-@media screen and (min-width: 1270px) {
+.resp h1{
+  opacity: 100;
+}
+span {
+  color: red;
+}
+*:focus {
+  outline: none;
+}
+@media screen and (min-width: 1300px) {
   .form input,
   select,
   textarea {
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,7 +75,7 @@ button {
   }
   input,
   select {
-    width: 100%;
+    width: 70%;
     height: 20px;
     border: none;
     border-bottom: solid 1px black;
@@ -72,7 +92,7 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 50%;
+    width: 45%;
     height: 900px;
     background: url("https://semillitasbilingue.edu.co/wp-content/uploads/2019/07/blog_1-6.jpg");
     background-repeat: no-repeat;

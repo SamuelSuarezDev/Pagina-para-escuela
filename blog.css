@@ -2,32 +2,83 @@
   display: flex;
   width: 100%;
   height: 100%;
-  margin: 100px 0 0 0;
+  margin: 0;
   overflow-x: hidden;
-  background-color: rgb(248, 248, 248);
+  font-family: "Outfit", sans-serif;
 }
-#blog figure img {
+#blog img {
   width: 100%;
   height: 500px;
 }
 #blog article {
-  padding: 70px;
+  padding: 50px;
 }
-#blog p,
-h4 {
+#blog p {
   width: 100%;
   text-align: center;
   font-size: 40px;
 }
-@media screen and (max-width:1230px) {
+#blog h2 {
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1620px) {
   #blog .container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  #blog img {
+    width: 100%;
+    height: 100%;
+  }
+  #blog p {
+    text-align: start;
+  }
 }
-#blog figure img {
-  width: 100%;
-  height: 100%;
+@media screen and (max-width: 590px) {
+  #blog p {
+    font-size: 24px;
+    text-align: start;
+  }
+  #blog article {
+    padding: 30px;
+  }
 }
+@media screen and (min-width: 1800px) {
+  #blog .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #blog img {
+    width: 50%;
+  }
+  .img1 {
+    float: right;
+  }
+  #blog article:nth-child(1) {
+    border-bottom: 10px solid white;
+  }
+  .img2 {
+    float: left;
+  }
+  #blog .text1 {
+    float: left;
+    width: 47%;
+    text-align: start;
+    font-size: 62px;
+  }
+  #blog .text2 {
+    float: right;
+    width: 47%;
+    text-align: end;
+    font-size: 62px;
+  }
+  #blog article {
+    padding: 0;
+  }
 }
